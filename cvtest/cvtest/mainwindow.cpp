@@ -84,9 +84,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_FilterExecuter_But_clicked()
 {
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(Executer)");
+    if(IsImageVaild() != true){
       return;
     }
     int curTabidx;
@@ -183,31 +181,11 @@ void MainWindow::on_FilterExecuter_But_clicked()
         _mySlotPause = false;
 
         QString morshape = ui->morShape_comboBox->currentText();
-//        if(morshape == "矩形"){
-//            morParameter.shape = MorphShapes::MORPH_RECT;
-//        }
-//        else if(morshape == "圆形"){
-//            morParameter.shape = MorphShapes::MORPH_ELLIPSE;
-//        }
-//        else if(morshape == "叉形"){
-//            morParameter.shape = MorphShapes::MORPH_CROSS;
-//        }
          morParameter.shape = morshapeMap[morshape];
 
         QString mortype = ui->morType_comboBox->currentText();
-//        if(mortype == "腐蚀"){
-//            morParameter.operationType = MorphTypes::MORPH_ERODE;
-//        }
-//        else if(mortype == "膨胀"){
-//            morParameter.operationType = MorphTypes::MORPH_DILATE;
-//        }
-//        else if(mortype == "开运算"){
-//            morParameter.operationType = MorphTypes::MORPH_OPEN;
-//        }
-//        else if(mortype == "闭运算"){
-//            morParameter.operationType = MorphTypes::MORPH_CLOSE;
-//        }
         morParameter.operationType = mortypeMap[mortype];
+
         _myFilter->executeMorhology(morParameter.operationType,morParameter.shape,tempksize);
 
     }
@@ -285,14 +263,23 @@ QString MainWindow::GetImagePath()
     return temppath;
 }
 
-
-void MainWindow::on_InvFilterExecuter_But_clicked()
+bool MainWindow::IsImageVaild()
 {
     if(_myFilter == Q_NULLPTR)
     {
       QMessageBox::warning(this,"需要一张图片","文件-打开图片(InvExecuter)");
+      return false;
+    }
+    return true;
+}
+
+
+void MainWindow::on_InvFilterExecuter_But_clicked()
+{
+    if(IsImageVaild() != true){
       return;
     }
+
     cv::Mat tempMat = _myFilter->getSrcImagecvMat();
 
     ui->imageshow_label->setPixmap(QPixmap::fromImage(_myFilter->ConvertMat2QImage(tempMat)));
@@ -300,11 +287,10 @@ void MainWindow::on_InvFilterExecuter_But_clicked()
 
 void MainWindow::on_ksize_Slider_valueChanged(int value)
 {
-    if(_mySlotPause == true)
+    if(_mySlotPause == true){
         return;
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(ksizeslider)");
+    }
+    if(IsImageVaild() != true){
       return;
     }
     gausParameter.ksize = value << 1;
@@ -321,12 +307,10 @@ void MainWindow::on_ksize_Slider_valueChanged(int value)
 
 void MainWindow::on_standvariance_Slider_valueChanged(int value)
 {
-    if(_mySlotPause == true)
+    if(_mySlotPause == true){
         return;
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(standvarianceSlider)");
-      //ui->standvariance_Slider->setSliderPosition(0);
+    }
+    if(IsImageVaild() != true){
       return;
     }
     gausParameter.sigma = float(value)/10;
@@ -342,11 +326,10 @@ void MainWindow::on_standvariance_Slider_valueChanged(int value)
 
 void MainWindow::on_median_ksize_Slider_valueChanged(int value)
 {
-    if(_mySlotPause == true)
+    if(_mySlotPause == true){
         return;
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(ksizeslider)");
+    }
+    if(IsImageVaild() != true){
       return;
     }
     medianParameter.ksize = value << 1;
@@ -359,11 +342,10 @@ void MainWindow::on_median_ksize_Slider_valueChanged(int value)
 
 void MainWindow::on_mean_ksize_Slider_valueChanged(int value)
 {
-    if(_mySlotPause == true)
+    if(_mySlotPause == true){
         return;
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(ksizeslider)");
+    }
+    if(IsImageVaild() != true){
       return;
     }
     meanParameter.ksize = value << 1;
@@ -436,6 +418,9 @@ void MainWindow::on_GrayOpen_action_triggered()
 
 void MainWindow::on_histequalizeButton_clicked()
 {
+    if(IsImageVaild() != true){
+      return;
+    }
     _myFilter->executeHistogramEqualization();
     Mat tempMat = _myFilter->getDstImagecvMat();
     DrawHistogram(tempMat);
@@ -443,11 +428,10 @@ void MainWindow::on_histequalizeButton_clicked()
 
 void MainWindow::on_mor_ksize_Slider_valueChanged(int value)
 {
-    if(_mySlotPause == true)
+    if(_mySlotPause == true){
         return;
-    if(_myFilter == Q_NULLPTR)
-    {
-      QMessageBox::warning(this,"需要一张图片","文件-打开图片(ksizeslider)");
+    }
+    if(IsImageVaild() != true){
       return;
     }
 

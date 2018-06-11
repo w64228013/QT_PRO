@@ -98,6 +98,7 @@ private:
     void UpdateTheImage();
     void DrawHistogram(cv::Mat histImage);
     QString GetImagePath();
+    bool IsImageVaild();
 
 protected:
 //    void paintEvent(QPaintEvent *e);
