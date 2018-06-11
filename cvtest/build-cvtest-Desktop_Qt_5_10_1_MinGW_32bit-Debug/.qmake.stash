@@ -1,3 +1,5 @@
+QMAKE_CXX.INCDIRS = \
+    D:/Qt/Qt5.10.1/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include \
     D:/Qt/Qt5.10.1/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed \
     D:/Qt/Qt5.10.1/Tools/mingw530_32/i686-w64-mingw32/include \
     D:/Qt/Qt5.10.1/Tools/mingw530_32/i686-w64-mingw32/include/c++ \

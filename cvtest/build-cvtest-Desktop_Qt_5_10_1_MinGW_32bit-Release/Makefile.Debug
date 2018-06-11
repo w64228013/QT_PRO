@@ -274,10 +274,10 @@ debug/moc_mainwindow.cpp: D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QMa
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QDebug \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QTextCodec \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qtextcodec.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/cv2qt.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QObject \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/QImage \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QRegExp \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -662,6 +662,7 @@ debug/moc_mainwindow.cpp: D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QMa
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewdialog.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewwidget.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qtprintsupportversion.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QMap \
 		../cvtest/mainwindow.h \
 		debug/moc_predefs.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/bin/moc.exe
@@ -773,6 +774,7 @@ debug/moc_filter.cpp: D:/opencv/build/include/opencv2/core/core.hpp \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QTextCodec \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qtextcodec.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/cv2qt.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QObject \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/QImage \
@@ -796,7 +798,6 @@ debug/moc_filter.cpp: D:/opencv/build/include/opencv2/core/core.hpp \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qdatastream.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qline.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/qpainterpath.h \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/filter.h \
 		debug/moc_predefs.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/bin/moc.exe
@@ -1977,10 +1978,10 @@ debug/main.o: ../cvtest/main.cpp ../cvtest/mainwindow.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QDebug \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QTextCodec \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qtextcodec.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/cv2qt.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QObject \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/QImage \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QRegExp \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -2365,6 +2366,7 @@ debug/main.o: ../cvtest/main.cpp ../cvtest/mainwindow.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewdialog.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewwidget.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qtprintsupportversion.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QMap \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QApplication
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\cvtest\main.cpp
 
@@ -2524,10 +2526,10 @@ debug/mainwindow.o: ../cvtest/mainwindow.cpp ../cvtest/mainwindow.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QDebug \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QTextCodec \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qtextcodec.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/cv2qt.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QObject \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/QImage \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QRegExp \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -2912,11 +2914,13 @@ debug/mainwindow.o: ../cvtest/mainwindow.cpp ../cvtest/mainwindow.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewdialog.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qprintpreviewwidget.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtPrintSupport/qtprintsupportversion.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QMap \
 		ui_mainwindow.h \
 		D:/QT_3rdLib/qcustomplot/qcustomplot.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QAction \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QApplication \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QFrame \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QHBoxLayout \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtWidgets/QHeaderView \
@@ -3041,6 +3045,7 @@ debug/filter.o: ../cvtest/filter.cpp ../cvtest/filter.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QTextCodec \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qtextcodec.h \
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector \
 		../cvtest/cv2qt.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QObject \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/QImage \
@@ -3063,8 +3068,7 @@ debug/filter.o: ../cvtest/filter.cpp ../cvtest/filter.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/qregion.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qdatastream.h \
 		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/qline.h \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/qpainterpath.h \
-		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtCore/QVector
+		D:/Qt/Qt5.10.1/5.10.1/mingw53_32/include/QtGui/qpainterpath.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\filter.o ..\cvtest\filter.cpp
 
 debug/cv2qt.o: ../cvtest/cv2qt.cpp ../cvtest/cv2qt.h \

@@ -50,7 +50,6 @@ LIBS += D:\opencv\cv_build\install\x86\mingw\bin\libopencv_features2d340.dll
 LIBS += D:\opencv\cv_build\install\x86\mingw\bin\libopencv_calib3d340.dll
 
 
-
 INCLUDEPATH += D:\QT_3rdLib\qcustomplot\MinGW_Lib\DeBug
 
 #LIBS += D:\QT_3rdLib\qcustomplot\MinGW_Lib\DeBug\libQCustomPlot.a
