@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\imagereader.o
+./release\rectangle.o
+./release\myimageview.o
+./release\myscene.o
+./release\mydiagitem.o
+./release\mytextbrowser.o
+./release\qrc_icon.o
+./release\moc_mainwindow.o
+./release\moc_imagereader.o
+./release\moc_myimageview.o
+./release\moc_mydiagitem.o
+./release\moc_myscene.o
+./release\moc_mytextbrowser.o
+);

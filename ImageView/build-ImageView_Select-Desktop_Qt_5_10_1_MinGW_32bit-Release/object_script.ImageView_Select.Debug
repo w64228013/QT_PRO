@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\imagereader.o
+./debug\rectangle.o
+./debug\myimageview.o
+./debug\myscene.o
+./debug\mydiagitem.o
+./debug\mytextbrowser.o
+./debug\qrc_icon.o
+./debug\moc_mainwindow.o
+./debug\moc_imagereader.o
+./debug\moc_myimageview.o
+./debug\moc_mydiagitem.o
+./debug\moc_myscene.o
+./debug\moc_mytextbrowser.o
+);

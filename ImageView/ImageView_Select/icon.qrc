@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon/curosr_blue.png</file>
+        <file>icon/cursor_black.png</file>
+        <file>icon/hand_black.png</file>
+        <file>icon/hand_blue.png</file>
+    </qresource>
+</RCC>
